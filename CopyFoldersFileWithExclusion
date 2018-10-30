@@ -1,0 +1,1 @@
+robocopy "C:\Users\userName\Desktop\source path" "C:\Users\userName\Desktop\target path" /E /XF /xd "folderOrfileNameToExclude1" "folderOrfileNameToExclude2" "folderOrfileNameToExclude3"
