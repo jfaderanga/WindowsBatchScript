@@ -1,0 +1,9 @@
+# Run this in powershell
+# This moves all empty folders to a new folders (includes subfolders)
+
+Get-ChildItem "C:\Users\JaysonF\Desktop\Extract Here\Set 1\New folder" -recurse | 
+Foreach-Object {
+     if ((Get-ChildItem -File -Path $_.FullName).count -eq 0 ) {
+     	Move-Item $_.FullName -Destination "C:\Users\JaysonF\Desktop\Extract Here\Set 1\Move Here" -Force
+     }
+}
